@@ -1,0 +1,51 @@
+/* --- Global Styles --- */
+* {
+    font-family: "FantasqueSansM Nerd Font Propo";
+    font-size: 18px;
+}
+
+window#waybar {
+    background: #212121;
+}
+
+#clock, #pulseaudio, #clock, #window, #network  {
+    margin: 10px 10px 10px 10px;
+    padding: 8px;
+    border-radius: 2px;
+}
+
+#workspaces {
+    margin: 10px 10px 10px 10px;
+    border-radius: 2px;
+}
+
+#workspaces button:hover {
+    border: 0px transparent;
+    border-radius: 5px;
+    background: transparent;
+}
+
+#workspaces button.active {
+    color: #E57373;
+}
+
+#clock {
+    background: #673AB7;
+}
+
+#pulseaudio {
+    background: #FFC107;
+}
+
+window#waybar.empty #window {
+    background-color: transparent;
+    border: none;
+}
+
+#window {
+    background: #9C27B0;
+}
+
+#network {
+    background: #F57F17;
+}
