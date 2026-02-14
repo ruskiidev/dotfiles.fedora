@@ -1,51 +1,70 @@
 /* --- Global Styles --- */
 * {
-    font-family: "FantasqueSansM Nerd Font Propo";
-    font-size: 18px;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 14px;
+    font-weight: bold;
 }
 
 window#waybar {
-    background: #212121;
-}
-
-#clock, #pulseaudio, #clock, #window, #network  {
-    margin: 10px 10px 10px 10px;
-    padding: 8px;
-    border-radius: 2px;
-}
-
-#workspaces {
-    margin: 10px 10px 10px 10px;
-    border-radius: 2px;
-}
-
-#workspaces button:hover {
-    border: 0px transparent;
-    border-radius: 5px;
     background: transparent;
 }
 
+window#waybar>box {
+    margin: 5px 10px;
+    border-radius: 20px;
+    background: #121212;
+    /* Material Dark Background */
+    padding: 2px 10px;
+}
+
+#clock,
+#pulseaudio,
+#window,
+#network,
+#workspaces {
+    padding: 0px 10px;
+    margin: 4px 2px;
+    background: transparent;
+    color: #ECEFF1;
+    /* Material Blue Grey 50 */
+}
+
+#workspaces button {
+    padding: 0px 5px;
+    color: #B0BEC5;
+    /* Material Blue Grey 200 */
+    border-radius: 10px;
+}
+
 #workspaces button.active {
-    color: #E57373;
+    color: #ECEFF1;
+    background: #009688;
+    /* Material Teal 500 */
+    min-width: 20px;
+}
+
+#workspaces button:hover {
+    background: #546E7A;
+    /* Material Blue Grey 600 */
+    color: #ECEFF1;
 }
 
 #clock {
-    background: #673AB7;
+    color: #80CBC4;
+    /* Material Teal 200 */
 }
 
 #pulseaudio {
-    background: #FFC107;
-}
-
-window#waybar.empty #window {
-    background-color: transparent;
-    border: none;
-}
-
-#window {
-    background: #9C27B0;
+    color: #FFCA28;
+    /* Material Amber 400 */
 }
 
 #network {
-    background: #F57F17;
+    color: #66BB6A;
+    /* Material Green 400 */
+}
+
+#window {
+    color: #90A4AE;
+    /* Material Blue Grey 300 */
 }
