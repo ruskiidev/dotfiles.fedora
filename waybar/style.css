@@ -21,7 +21,8 @@ window#waybar>box {
 #pulseaudio,
 #window,
 #network,
-#workspaces {
+#workspaces,
+#tray {
     padding: 0px 10px;
     margin: 4px 2px;
     background: transparent;

@@ -14,11 +14,16 @@
   ],
   "modules-right": [
     "hyprland/window",
-    "pulseaudio"
+    "pulseaudio",
+    "tray"
   ],
   "window": {
     "format": "{title}",
     "max-length": 50,
+  },
+  "tray": {
+    "icon-size": 18,
+    "spacing": 10
   },
   "clock": {
     "interval": 1,
